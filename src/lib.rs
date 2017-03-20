@@ -51,7 +51,7 @@ fn impl_parsed(ast: &syn::DeriveInput) -> Result<quote::Tokens, String> {
             return Err("Cannot implement Parsed for an empty struct".to_string());
     }
 
-    let packed_bound = syn::parse_ty_param_bound("bytepack::Packed")?;
+    let packed_bound = syn::parse_ty_param_bound("Packed")?;
 
     for ty in &type_set {
         where_clause.predicates.push(syn::WherePredicate::BoundPredicate(syn::WhereBoundPredicate {
