@@ -1,12 +1,12 @@
 [package]
 name = "bytepack_derive"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Charles Hubain <github@haxelion.eu>"]
 description = "bytepack_derive offers a custom derive of the Packed trait"
 documentation = "https://docs.rs/bytepack/trait.Packed.html"
 homepage = "https://github.com/haxelion/bytepack"
 repository = "https://github.com/haxelion/bytepack_derive"
-license = "Apache-2.0"
+license = "MIT"
 
 [lib]
 proc-macro = true
